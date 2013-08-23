@@ -1,5 +1,110 @@
 <head>
+
+	 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	 <link rel="stylesheet" href="http://flip.hr/css/bootstrap.min.css">
+	 <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+	 <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+	 <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+	 <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+	 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,300italic,400italic,600italic,800italic" rel="stylesheet" type="text/css">
+	 
+	 <style type="text/css">
+	   /* Large desktop */
+		body {
+	   
+	   }
+	   .linediv-l{
+	   border-right: 1px white solid;
+	   }
+	   .linediv-r{
+	   border-left: 1px white solid;
+	   }
+	   }
+
+	   /* Landscape phones and down */
+	   @media (max-width: 480px){
+	   .copy{
+	   padding: 2.5% 10%;
+	   }
+	   .linediv-l{
+	   border-bottom: 1px white solid;
+	   }
+	   .linediv-r{
+	   border-top: 1px white solid;
+	   }
+	   }
+
+	   /* All form factors*/
+
+	   /* Main body and headings */
+	   body{
+	   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	   }
+	   .heading, .subheading{
+	   font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+	   text-align: center;
+	   }
+	   p.lead{
+	   padding-top: 1.5%;
+	   font-size: 24px;
+	   line-height: 30px;
+	   }
+	   p {
+	   font-size: 18px;
+	   line-height: 24px;
+	   }
+
+	   /* Video pitch and Action */
+
+	   .pitch{
+	   padding: 2.5% 0%;
+	   }
+	   .order {
+	   padding: 2% 0%;
+	   }
+	   .actions {
+	   background-color: #343434;
+	   padding: 3% 0%;
+	   }
+	   .video, .thermometer, .order, .social, .statistics{
+	   text-align: center;
+	   }
+	   .statistics h3, .statistics p{
+	   color: white;
+	   }
+
+	   /*Marketing Copy and Footer */
+
+	   .copy{
+	   padding-top: 2.5%;
+	   padding-bottom: 2.5%;
+	   text-align: justify;
+	   }
+	   .asset{
+	   padding: 2.5% 0%;
+	   }
+	   .footer {
+	   color: #cccccc;
+	   text-align: center;
+	   }
+	   .footer p {
+	   font-size; 11px;
+	   }
+	   .footer a {
+	   color: #ccccff;
+	   }
+	   div.addthis_toolbox {
+	   width:180px;
+	   margin: 0 auto;
+	   }
+
+ 
+	 </Style> 
+	
+	
 	<script type="text/javascript">
+	
 		function buttonPress()
 		{
 			
@@ -71,11 +176,28 @@
 		}
 	</script>
 </head>
-<body bgcolor="white" text="red" >	
-<hr  color="Red" />
-<font color="black" size="5"><marquee direction="right"><h1>Crucigrama de Comandos de Git</h1></marquee></font>
-<hr color="Red"/>
-<table border="1" align="center" bgcolor="black" bordercolor="black">	
+<body >
+   <div class="navbar navbar-inverse navbar-fixed-top">
+     <div class="navbar-inner">
+       <div class"container">
+	 <button type="button" class="btn btn-navbar"
+		 data-toggle="collapse" data-target=".nav-collapse">
+	   <span class="icon-bar"></span>
+	   <span class="icon-bar"></span>
+	 </button>
+	 <a class="brand" href="http://www.ucbcba.edu.bo">UCB-Cbba</a>
+	 <div class="nav-collapse collapse">
+	   <ul class="nav">
+	     <li class="active"><a href="#">Game</a></li>
+	     <li><a href="#Scores">Scores</a></li>
+		 
+	   </ul>
+	 </div>
+       </div>
+     </div>
+   </div>
+	
+<table border="1" align="center" ">	
 <td >
 	<pre>
 VERTICALES:
@@ -88,7 +210,7 @@ VERTICALES:
 	</pre>
 </td>
 <td>
-<table border="1" align="center" width="500" height="450" bgcolor="white">
+<table border="1" align="center" width="500" height="450" bgcolor="white" >
 	<td>
 	<table  id="tabla" name="tabla" align="center" style="text-align: center">
 	<!--1--><tr><td/><td/><td/><td/><td>4</td></tr>
@@ -148,5 +270,7 @@ HORIZONTALES:
 </td>
 </table>
 <br/>
-<div align="center" ><button style="background-color: black; color: red" onclick="buttonPress()" > Enviar Solucion</button></div>
+<div class="span6 offset3 order">
+	<a href="javascript:buttonPress()" class="btn btn-inverse btn-large"><i class="icon-white icon-share-alt"></i> Send Solution</a>
+</div>
 </body>
