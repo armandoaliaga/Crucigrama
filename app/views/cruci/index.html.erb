@@ -1,0 +1,152 @@
+<head>
+	<script type="text/javascript">
+		function buttonPress()
+		{
+			
+			var tabla=document.getElementById("tabla");	
+			var palabra1=new String();
+			var palabra2=new String();
+			var palabra3=new String();
+			var palabra4=new String();
+			var palabra5=new String();
+			var palabra6=new String();			
+			var palabra7=new String();
+			var palabra8=new String();
+			var palabra9=new String();
+			var palabra10=new String();
+			var palabra11=new String();			
+			for(var i=3;i<=10;i++)
+			{
+				palabra1=palabra1.concat(tabla.rows[i].cells[8].children[0].value);				
+			}				
+			for(var i=2;i<=7;i++)
+			{
+				palabra2=palabra2.concat(tabla.rows[i].cells[13].children[0].value);				
+			}	
+			for(var i=4;i<=6;i++)
+			{
+				palabra3=palabra3.concat(tabla.rows[i].cells[6].children[0].value);				
+			}					
+			for(var i=1;i<=6;i++)
+			{
+				palabra4=palabra4.concat(tabla.rows[i].cells[4].children[0].value);				
+			}			
+			for(var i=2;i<=6;i++)
+			{			
+				palabra5=palabra5.concat(tabla.rows[2].cells[i].children[0].value);				
+			}
+			for(var i=1;i<=4;i++)
+			{
+				palabra6=palabra6.concat(tabla.rows[6].cells[i].children[0].value);				
+			}
+			for(var i=5;i<=8;i++)
+			{
+				palabra7=palabra7.concat(tabla.rows[10].cells[i].children[0].value);				
+			}			
+			for(var i=4;i<=8;i++)
+			{
+				palabra8=palabra8.concat(tabla.rows[5].cells[i].children[0].value);				
+			}			
+			for(var i=8;i<=13;i++)
+			{
+				palabra9=palabra9.concat(tabla.rows[3].cells[i].children[0].value);				
+			}		
+			for(var i=13;i<=15;i++)
+			{
+				palabra10=palabra10.concat(tabla.rows[4].cells[i].children[0].value);				
+			}			
+			for(var i=12;i<=15;i++)
+			{
+				palabra11=palabra11.concat(tabla.rows[6].cells[i].children[0].value);				
+			}			
+			if(palabra1.toLowerCase()=="checkout" && palabra2.toLowerCase()=="status" && palabra3.toLowerCase()=="log" && palabra4.toLowerCase()=="branch"&& palabra5.toLowerCase()=="merge" &&palabra6.toLowerCase()=="push" &&palabra7.toLowerCase()=="init" && palabra8.toLowerCase()=="clone" && palabra9.toLowerCase()=="commit" && palabra10.toLowerCase()=="add" && palabra11.toLowerCase() =="pull")
+			 {
+			 	alert("OK");
+			 }
+			 else
+			 {
+				alert("no"); 	
+			 }
+								
+		}
+	</script>
+</head>
+<body bgcolor="white" text="red" >	
+<hr  color="Red" />
+<font color="black" size="5"><marquee direction="right"><h1>Crucigrama de Comandos de Git</h1></marquee></font>
+<hr color="Red"/>
+<table border="1" align="center" bgcolor="black" bordercolor="black">	
+<td >
+	<pre>
+VERTICALES:
+  1.- Comando para cambiar el árbol 
+      de trabajo local a la rama indicada.
+  2.- Comando para immprir un reporte del
+      estado actual del árbol de trabajo local	
+  3.- Comando para mostrar el log del commit
+  4.- Comando para listar las ramas locales  
+	</pre>
+</td>
+<td>
+<table border="1" align="center" width="500" height="450" bgcolor="white">
+	<td>
+	<table  id="tabla" name="tabla" align="center" style="text-align: center">
+	<!--1--><tr><td/><td/><td/><td/><td>4</td></tr>
+	<!--2--><tr><td/><td/><td/><td/><td><input style="width: 22; height: 22" name="p12" type="text" size="1" maxlength="1" style="background-color:#B0D2D7"></td>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td>2</td>
+			</tr>
+	<!--3--><tr><td/><td>5</td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+			<td/><td>1</td><td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+			</tr>
+	<!--4--><tr><td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td>3</td><td>9</td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+			</tr>
+	<!--5--><tr><td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td/><td/><td>10</td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+			</tr>
+	<!--6--><tr><td/><td/><td/><td>8</td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>		
+			</tr>
+	<!--7--><tr><td>6</td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td/><td>11</td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>					
+			</tr>
+	<!--8--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>		
+			</tr>
+	<!--9--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>		
+			</tr>
+	<!--10--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td>
+			</tr>
+	<!--11--><tr><td/><td/><td/><td/><td>7</td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 22; height: 22" name="" type="text" size="1" maxlength="1" ></td></tr>
+	</table>
+	</td>	
+</table>
+</td>
+<td>
+	<pre>
+HORIZONTALES:
+
+  5.- Comando para combinar dos ramas
+  6.- Comando para subir cambios del repositorio 
+      local al remoto
+  7.- Comando para crear un repositorio en el 
+      directorio actual
+  8.- Comando para clonar un repositorio remoto 
+      dentro de un directorio
+  9.-* Comando para realizar el commit de los 
+      archivos que han sido registrado
+  10.- Comando para registar un archivo en el 
+      repositorio local
+  11.- Comando para descargar y guardar los  
+       cambios realizados desde un repositorio 
+       remoto
+	</pre>
+</td>
+</table>
+<br/>
+<div align="center" ><button style="background-color: black; color: red" onclick="buttonPress()" > Enviar Solucion</button></div>
+</body>
