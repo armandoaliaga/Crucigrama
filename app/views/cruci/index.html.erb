@@ -163,16 +163,85 @@
 			for(var i=12;i<=15;i++)
 			{
 				palabra11=palabra11.concat(tabla.rows[6].cells[i].children[0].value);				
-			}			
+			}		
+
+			if(palabra1.toLowerCase()=="checkout")
+				document.getElementById("1ok").style.visibility = 'visible';
+			else
+				document.getElementById("1nok").style.visibility = 'visible';
+				
+			if(palabra2.toLowerCase()=="status")
+				document.getElementById("2ok").style.visibility = 'visible';
+			else
+				document.getElementById("2nok").style.visibility = 'visible';
+				
+			if(palabra3.toLowerCase()=="log")
+				document.getElementById("3ok").style.visibility = 'visible';
+			else
+				document.getElementById("3nok").style.visibility = 'visible';
+				
+			if(palabra4.toLowerCase()=="branch")
+				document.getElementById("4ok").style.visibility = 'visible';
+			else
+				document.getElementById("4nok").style.visibility = 'visible';
+				
+				
+			if(palabra5.toLowerCase()=="merge")
+				document.getElementById("5ok").style.visibility = 'visible';
+			else
+				document.getElementById("5nok").style.visibility = 'visible';
+				
+			if(palabra6.toLowerCase()=="push")
+				document.getElementById("6ok").style.visibility = 'visible';
+			else
+				document.getElementById("6nok").style.visibility = 'visible';
+				
+			if(palabra7.toLowerCase()=="init")
+				document.getElementById("7ok").style.visibility = 'visible';
+			else
+				document.getElementById("7nok").style.visibility = 'visible';
+				
+			if(palabra8.toLowerCase()=="clone")
+				document.getElementById("8ok").style.visibility = 'visible';
+			else
+				document.getElementById("8nok").style.visibility = 'visible';
+				
+			if(palabra9.toLowerCase()=="commit")
+				document.getElementById("9ok").style.visibility = 'visible';
+			else
+				document.getElementById("9nok").style.visibility = 'visible';
+				
+			if(palabra10.toLowerCase()=="add")
+				document.getElementById("10ok").style.visibility = 'visible';
+			else
+				document.getElementById("10nok").style.visibility = 'visible';
+				
+			if(palabra11.toLowerCase() =="pull")
+				document.getElementById("11ok").style.visibility = 'visible';
+			else
+				document.getElementById("11nok").style.visibility = 'visible';
+			
 			if(palabra1.toLowerCase()=="checkout" && palabra2.toLowerCase()=="status" && palabra3.toLowerCase()=="log" && palabra4.toLowerCase()=="branch"&& palabra5.toLowerCase()=="merge" &&palabra6.toLowerCase()=="push" &&palabra7.toLowerCase()=="init" && palabra8.toLowerCase()=="clone" && palabra9.toLowerCase()=="commit" && palabra10.toLowerCase()=="add" && palabra11.toLowerCase() =="pull")
 			 {
-			 	alert("OK");
+			 	alert("OK, your answer is correct");
 			 }
 			 else
 			 {
-				alert("Mal"); 	
+			 
+				alert("Not OK, you have erros"); 	
 			 }
-								
+			 
+			
+			
+			 
+			 
+			 
+			 document.getElementById("label-answer").style.visibility = 'visible';
+			 document.getElementById("label-answer").align="center" ;
+			document.getElementById("answer").style.visibility = 'visible';
+			 document.getElementById("answer").width="600" ;
+			 document.getElementById("answer").height="600" ;
+			 document.getElementById("answer").align="center" ;					
 		}
 	</script>
 </head>
@@ -210,46 +279,54 @@ VERTICALES:
   4.- Comando para listar las ramas locales  
 	</pre>
 </td>
-<td>
-<table border="1" align="center" width="500" height="450" bgcolor="white" >
-	<td>
-	<table  id="tabla" name="tabla" align="center" style="text-align: center">
-	<!--1--><tr><td/><td/><td/><td/><td>4</td></tr>
-	<!--2--><tr><td/><td/><td/><td/><td><input style="width: 25; height: 25" name="p12" type="text" size="1" maxlength="1" style="background-color:#B0D2D7"></td>
-				<td/><td/><td/><td/><td/><td/><td/><td/><td>2</td>
+<td  >
+<table border="1" align="center" width="500" height="450" bgcolor="white">
+	<td  >
+	<table id="tabla" name="tabla" align="center" style="text-align: center"  >
+	<!--1--><tr><td/><td/><td/><td/><td  >4</td></tr>
+	<!--2--><tr><td/><td/><td/><td/><td  ><input style="width: 25; height: 25" name="p12" type="text" size="1" maxlength="1" style="background-color:#B0D2D7"></td>
+				<td/><td/><td/><td/><td/><td/><td/><td/><td  >2</td>
 			</tr>
-	<!--3--><tr><td/><td>5</td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-			<td/><td>1</td><td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+	<!--3--><tr><td/><td  >5</td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+			<td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="5ok"></i> <i class="icon-white icon-remove-circle" id="5nok" style="visibility:hidden"></i></td><td  >1</td><td/><td/><td/><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+			</td>
 			</tr>
-	<!--4--><tr><td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td>3</td><td>9</td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+	<!--4--><tr><td/><td/><td/><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td  >3</td><td  >9</td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="9ok"></i> <i class="icon-white icon-remove-circle" id="9nok" style="visibility:hidden"></i>
 			</tr>
-	<!--5--><tr><td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td/><td/><td>10</td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+	<!--5--><tr><td/><td/><td/><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td/><td/><td  >10</td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="10ok"></i> <i class="icon-white icon-remove-circle" id="10nok" style="visibility:hidden"></i>
 			</tr>
-	<!--6--><tr><td/><td/><td/><td>8</td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>		
+	<!--6--><tr><td/><td/><td/><td  >8</td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="8ok"></i> <i class="icon-white icon-remove-circle" id="8nok" style="visibility:hidden"></i></td><td/><td/><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>		
 			</tr>
-	<!--7--><tr><td>6</td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td/><td>11</td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>					
+	<!--7--><tr><td  >6</td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td  ><i class="icon-white icon-ok-circle" style="visibility:hidden" id="6ok"></i> <i class="icon-white icon-remove-circle" id="6nok" style="visibility:hidden"></i></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td/><td  >11</td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>					
+				<td ><i class="icon-white icon-ok-circle" style="visibility:hidden" id="11ok"></i> <i class="icon-white icon-remove-circle" id="11nok" style="visibility:hidden"></i></td>
 			</tr>
-	<!--8--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
-				<td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>		
+	<!--8--><tr><td/><td/><td/><td/><td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="4ok"></i> <i class="icon-white icon-remove-circle" id="4nok" style="visibility:hidden"></i></td><td/><td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="3ok"></i> <i class="icon-white icon-remove-circle" id="3nok" style="visibility:hidden"></i></td><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+				<td/><td/><td/><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>		
 			</tr>
-	<!--9--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>		
+	<!--9--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>		
+			<td/><td/><td/><td/><td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="2ok"></i> <i class="icon-white icon-remove-circle" id="2nok" style="visibility:hidden"></i></td>
 			</tr>
-	<!--10--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+	<!--10--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
 			</tr>
-	<!--11--><tr><td/><td/><td/><td/><td>7</td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td></tr>
+	<!--11--><tr><td/><td/><td/><td/><td  >7</td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td><td  ><input style="width: 25; height: 25" name="" type="text" size="1" maxlength="1" ></td>
+			<td><i class="icon-white icon-ok-circle" style="visibility:hidden" id="7ok"></i> <i class="icon-white icon-remove-circle" id="7nok" style="visibility:hidden"></i></td></tr>
+				
+	<!--12--><tr><td/><td/><td/><td/><td/><td/><td/><td/><td  ><i class="icon-white icon-ok-circle" style="visibility:hidden" id="1ok"></i> <i class="icon-white icon-remove-circle" id="1nok" style="visibility:hidden"></i></td></tr>
 	</table>
 	</td>	
 </table>
 </td>
-<td>
+<td  >
 	<pre>
 HORIZONTALES:
 
@@ -270,8 +347,13 @@ HORIZONTALES:
 	</pre>
 </td>
 </table>
+
 <br/>
+<h2 id="label-answer" style="visibility:hidden" > ANSWERS </h2>
+<p align="center">
+<img src="../images/git-answers.png" style="visibility:hidden" align="center"  id="answer" width=10 height=10> </p>
 <div class="span6 offset3 order">
+
 	<a href="javascript:buttonPress()" class="btn btn-inverse btn-large"><i class="icon-white icon-share-alt"></i> Send Solution</a>
 </div>
 </body>
